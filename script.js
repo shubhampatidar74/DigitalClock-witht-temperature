@@ -21,7 +21,6 @@ const findTemperature = async (lati, longi) => {
     const options = {
         method: 'GET',
     };
-
     try {
         const response = await fetch(url, options);
         const result = await response.json();
@@ -30,14 +29,9 @@ const findTemperature = async (lati, longi) => {
     } catch (error) {
         console.error(error);
     }
-
 }
-
-
-
 latlon()
 findLocation()
-
 
 setInterval(() => {
     let clockData = new Date();
